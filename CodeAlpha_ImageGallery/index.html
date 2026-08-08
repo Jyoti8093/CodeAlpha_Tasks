@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeGallery - Professional Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-image"></i> PrimeGallery
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">✨ Curated Visual Stories</div>
+            <h1 class="hero-title">Discover Amazing Photography</h1>
+            <p class="hero-subtitle">Explore our curated collection of stunning images from around the world</p>
+            <button class="cta-button" onclick="document.getElementById('gallery').scrollIntoView({behavior: 'smooth'})">
+                View Gallery <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stat-item">
+            <h3>35+</h3>
+            <p>Premium Images</p>
+        </div>
+        <div class="stat-item">
+            <h3>3</h3>
+            <p>Categories</p>
+        </div>
+        <div class="stat-item">
+            <h3>100%</h3>
+            <p>Quality Assured</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-header">
+            <h2>Our Collection</h2>
+            <p>Browse through our carefully selected images</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <section class="filter-buttons">
+            <button class="active" data-filter="all">All Images</button>
+            <button data-filter="nature"><i class="fas fa-leaf"></i> Nature</button>
+            <button data-filter="animals"><i class="fas fa-paw"></i> Animals</button>
+            <button data-filter="cities"><i class="fas fa-city"></i> Cities</button>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery">
+            <!-- Nature -->
+            <div class="gallery-item nature" data-category="nature">
+                <img src="image/nature-1.jpeg" alt="Nature Image 1">
+                <div class="image-overlay"><span class="category-badge">Nature</span></div>
+            </div>
+            <div class="gallery-item nature" data-category="nature">
+                <img src="image/nature-2.jpeg" alt="Nature Image 2">
+                <div class="image-overlay"><span class="category-badge">Nature</span></div>
+            </div>
+
+            <!-- Animals -->
+            <div class="gallery-item animals" data-category="animals">
+                <img src="image/animal-1.jpeg" alt="Animal Image 1">
+                <div class="image-overlay"><span class="category-badge">Animals</span></div>
+            </div>
+            <div class="gallery-item animals" data-category="animals">
+                <img src="image/animal-2.jpeg" alt="Animal Image 2">
+                <div class="image-overlay"><span class="category-badge">Animals</span></div>
+            </div>
+
+            <!-- Cities -->
+            <div class="gallery-item cities" data-category="cities">
+                <img src="image/city-1.jpeg" alt="City Image 1">
+                <div class="image-overlay"><span class="category-badge">Cities</span></div>
+            </div>
+            <div class="gallery-item cities" data-category="cities">
+                <img src="image/city-2.jpeg" alt="City Image 2">
+                <div class="image-overlay"><span class="category-badge">Cities</span></div>
+            </div>
+
+            <div class="gallery-item nature" data-category="nature"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" alt="Mountain view landscape"><div class="image-overlay"><span class="category-badge">Nature</span></div></div>
+            <div class="gallery-item nature" data-category="nature"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Forest tree landscape"><div class="image-overlay"><span class="category-badge">Nature</span></div></div>
+            <div class="gallery-item animals" data-category="animals"><img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80" alt="Happy dog portrait"><div class="image-overlay"><span class="category-badge">Animals</span></div></div>
+            <div class="gallery-item animals" data-category="animals"><img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=900&q=80" alt="Cat in warm light"><div class="image-overlay"><span class="category-badge">Animals</span></div></div>
+            <div class="gallery-item cities" data-category="cities"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Modern city skyline"><div class="image-overlay"><span class="category-badge">Cities</span></div></div>
+            <div class="gallery-item cities" data-category="cities"><img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=900&q=80" alt="City lights at night"><div class="image-overlay"><span class="category-badge">Cities</span></div></div>
+            <div class="gallery-item nature" data-category="nature"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80" alt="Ocean waves and cliffs"><div class="image-overlay"><span class="category-badge">Nature</span></div></div>
+            <div class="gallery-item animals" data-category="animals"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80" alt="Wildlife in forest scenery"><div class="image-overlay"><span class="category-badge">Animals</span></div></div>
+            <div class="gallery-item cities" data-category="cities"><img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=80" alt="Colorful city street view"><div class="image-overlay"><span class="category-badge">Cities</span></div></div>
+            <div class="gallery-item nature" data-category="nature"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Sunny beach and ocean"><div class="image-overlay"><span class="category-badge">Nature</span></div></div>
+            <div class="gallery-item nature" data-category="nature"><img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=900&q=80" alt="Waterfall in green forest"><div class="image-overlay"><span class="category-badge">Nature</span></div></div>
+            <div class="gallery-item nature" data-category="nature"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Mountain lake landscape"><div class="image-overlay"><span class="category-badge">Nature</span></div></div>
+            <div class="gallery-item nature" data-category="nature"><img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=900&q=80" alt="Golden desert dunes"><div class="image-overlay"><span class="category-badge">Nature</span></div></div>
+            <div class="gallery-item nature" data-category="nature"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Colorful sunset scenery"><div class="image-overlay"><span class="category-badge">Nature</span></div></div>
+            <div class="gallery-item animals" data-category="animals"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=80" alt="Fox in natural habitat"><div class="image-overlay"><span class="category-badge">Animals</span></div></div>
+            <div class="gallery-item animals" data-category="animals"><img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=900&q=80" alt="Cute animal portrait"><div class="image-overlay"><span class="category-badge">Animals</span></div></div>
+            <div class="gallery-item animals" data-category="animals"><img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&w=900&q=80" alt="Owl perched on branch"><div class="image-overlay"><span class="category-badge">Animals</span></div></div>
+            <div class="gallery-item animals" data-category="animals"><img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=900&q=80" alt="Horse running through field"><div class="image-overlay"><span class="category-badge">Animals</span></div></div>
+            <div class="gallery-item animals" data-category="animals"><img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=900&q=80" alt="Colorful bird in flight"><div class="image-overlay"><span class="category-badge">Animals</span></div></div>
+            <div class="gallery-item animals" data-category="animals"><img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=80" alt="Dog portrait outdoors"><div class="image-overlay"><span class="category-badge">Animals</span></div></div>
+            <div class="gallery-item animals" data-category="animals"><img src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?auto=format&fit=crop&w=900&q=80" alt="Rabbit in green grass"><div class="image-overlay"><span class="category-badge">Animals</span></div></div>
+            <div class="gallery-item cities" data-category="cities"><img src="https://images.unsplash.com/photo-1527576539890-dfa815648363?auto=format&fit=crop&w=900&q=80" alt="Modern city street view"><div class="image-overlay"><span class="category-badge">Cities</span></div></div>
+            <div class="gallery-item cities" data-category="cities"><img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=900&q=80" alt="Bridge over city skyline"><div class="image-overlay"><span class="category-badge">Cities</span></div></div>
+            <div class="gallery-item cities" data-category="cities"><img src="https://images.unsplash.com/photo-1516542076529-1ea3854896f2?auto=format&fit=crop&w=900&q=80" alt="Busy urban street scene"><div class="image-overlay"><span class="category-badge">Cities</span></div></div>
+            <div class="gallery-item cities" data-category="cities"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=80" alt="Night lights in city center"><div class="image-overlay"><span class="category-badge">Cities</span></div></div>
+            <div class="gallery-item cities" data-category="cities"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Modern skyline at sunrise"><div class="image-overlay"><span class="category-badge">Cities</span></div></div>
+        </section>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2>Why Choose Us</h2>
+            <p>Premium features for the best experience</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card"><i class="fas fa-image"></i><h3>High Quality</h3><p>Crystal clear, professionally curated images</p></div>
+            <div class="feature-card"><i class="fas fa-mobile-alt"></i><h3>Responsive Design</h3><p>Perfect viewing on all devices and screen sizes</p></div>
+            <div class="feature-card"><i class="fas fa-filter"></i><h3>Easy Filtering</h3><p>Browse by categories with smooth transitions</p></div>
+            <div class="feature-card"><i class="fas fa-expand"></i><h3>Lightbox View</h3><p>Full-screen viewing with keyboard navigation</p></div>
+            <div class="feature-card"><i class="fas fa-bolt"></i><h3>Fast Loading</h3><p>Optimized for speed and performance</p></div>
+            <div class="feature-card"><i class="fas fa-heart"></i><h3>Beautiful UI</h3><p>Modern, clean design with smooth animations</p></div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <span class="close">&times;</span>
+        <button class="prev"><i class="fas fa-chevron-left"></i></button>
+        <img class="lightbox-image" alt="Full view image">
+        <button class="next"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-info"><span class="image-counter"></span></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-image"></i> PrimeGallery</h3>
+                <p>Professional image gallery platform showcasing the beauty of photography</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PrimeGallery. All rights reserved. | Designed with <i class="fas fa-heart"></i> for photographers</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
