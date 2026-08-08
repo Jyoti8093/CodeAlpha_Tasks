@@ -1,0 +1,23 @@
+@media (max-width: 480px) {
+    body {
+        padding: 14px;
+    }
+
+    .calculator {
+        padding: 18px;
+    }
+
+    .display {
+        padding: 18px 16px;
+        min-height: 110px;
+    }
+
+    .result {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 16px 0;
+        font-size: 1.1rem;
+    }
+}
