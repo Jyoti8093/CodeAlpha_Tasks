@@ -1,2 +1,81 @@
-<!-- CodeAlpha Task 2 - Calculator -->
-<!-- Replace this placeholder with your Calculator index.html code. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <main class="calculator">
+
+            <!-- Calculator Title -->
+            <header class="calculator-header">
+                <h1>Calculator</h1>
+            </header>
+
+            <!-- Display -->
+            <section class="display">
+
+                <div id="expression" class="expression">0</div>
+
+                <div id="result" class="result">0</div>
+
+            </section>
+
+            <!-- Calculator Buttons -->
+            <section class="button-grid">
+
+                <button class="btn function">AC</button>
+                <button class="btn function">⌫</button>
+                <button class="btn function">%</button>
+                <button class="btn operator">÷</button>
+
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn operator">×</button>
+
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn operator">−</button>
+
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn operator">+</button>
+
+                <button class="btn function">±</button>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button class="btn equal">=</button>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/calculator.js"></script>
+    <script src="js/keyboard.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
