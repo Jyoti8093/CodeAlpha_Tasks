@@ -1,0 +1,89 @@
+.calculator {
+    background: rgba(22, 28, 45, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 28px;
+    padding: 24px;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+}
+
+.calculator-header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.calculator-header h1 {
+    margin: 0;
+    font-size: 1.65rem;
+    letter-spacing: 0.18rem;
+    text-transform: uppercase;
+    color: #d7e2ff;
+}
+
+.display {
+    background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    border-radius: 24px;
+    padding: 22px 20px;
+    min-height: 120px;
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 14px;
+}
+
+.expression {
+    font-size: 1rem;
+    color: #99a7c7;
+    min-height: 20px;
+    word-break: break-all;
+}
+
+.result {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: right;
+    line-height: 1.05;
+    word-break: break-all;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.btn {
+    border-radius: 18px;
+    padding: 18px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.06);
+    color: #f5f8ff;
+    transition: background 180ms ease, transform 120ms ease;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 12px 18px rgba(0,0,0,0.12);
+}
+
+.btn.operator {
+    background: linear-gradient(135deg, #5a7cff, #4061ec);
+    color: #ffffff;
+}
+
+.btn.function {
+    background: rgba(255, 255, 255, 0.08);
+    color: #d3ddf3;
+}
+
+.btn.equal {
+    background: linear-gradient(135deg, #44d2ff, #2e8bff);
+    color: #fff;
+}
+
+.btn.active,
+.btn:focus-visible,
+.btn:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+button.equal {
+    grid-column: span 1;
+}
